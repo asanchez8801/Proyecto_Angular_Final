@@ -1,0 +1,44 @@
+.cajasDerecha {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  padding: 1% 0 1% 2%;
+  border-radius: 5cqb;
+  height: auto;
+  width: 70%;
+  background-image: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 0.5) 30%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+}
+
+.cajasIzquierda {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 30px;
+  margin: 20px 0 50px 5%;
+  padding: 1% 0 1% 2%;
+  border-radius: 5cqb;
+  height: auto;
+  width: 70%;
+  background-image: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 0.5) 30%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+}
+
+img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.carousel {
+  width: 30%;
+}
