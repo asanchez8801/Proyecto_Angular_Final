@@ -14,7 +14,11 @@
         Guajira.
       </p>
     </div>
-    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo1()">
+    <button
+      href="#"
+      class="btn btn-primary button"
+      (click)="mostrarOcultarInfo1()"
+    >
       {{ mensaje_enlace }}
     </button>
   </div>
@@ -34,7 +38,11 @@
         de sus termales.
       </p>
     </div>
-    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo2()">
+    <button
+      href="#"
+      class="btn btn-primary button"
+      (click)="mostrarOcultarInfo2()"
+    >
       {{ mensaje_enlace2 }}
     </button>
   </div>
@@ -54,7 +62,11 @@
         estudios Amazónicos.
       </p>
     </div>
-    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo3()">
+    <button
+      href="#"
+      class="btn btn-primary button"
+      (click)="mostrarOcultarInfo3()"
+    >
       {{ mensaje_enlace3 }}
     </button>
   </div>
@@ -74,7 +86,11 @@
         con bastante adrenalina.
       </p>
     </div>
-    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo4()">
+    <button
+      href="#"
+      class="btn btn-primary button"
+      (click)="mostrarOcultarInfo4()"
+    >
       {{ mensaje_enlace4 }}
     </button>
   </div>
@@ -157,10 +173,78 @@
 </div>
 
 <div *ngIf="mostrar3">
-  <p>{{ mensaje3 }}</p>
+  <div class="divInformacion">
+    <h2>Descripción</h2>
+    <p class="dark">
+      En este maravilloso destino rodeado de mucha naturaleza, recorremos los
+      departamentos de Cundinamarca, Tolima, Huila y Putumayo.
+    </p>
+    <h2>Recorrido</h2>
+    <p class="dark">
+      Saldremos desde la ciudad de Bogotá, hasta Mocoa en el departamento del
+      Putumayo, visitaremos la imponenete cascada del fin del mundo,
+      realizaremos una caminata ecológica por el cañon del Mandiyaco y podras
+      disfrutar de su grandiosa gastronomía.
+    </p>
+    <h2>Qué Incluye</h2>
+    <ul>
+      <li>5 días, 4 noches de hospedaje</li>
+      <li>Desayunos y almuerzos incluídos</li>
+      <li>Guías durante el recorrido</li>
+      <li>Ingreso a los destinos naturales</li>
+      <li>Seguro de viaje</li>
+      <li>Dirigido a motos de 250cc en adelante</li>
+    </ul>
+    <h2>Fechas Disponibles</h2>
+    <ol>
+      <li>20 al 25 de Julio 2024</li>
+      <li>31 de Agosto al 4 de Septiembre 2024</li>
+      <li>1 al 5 de Octubre 2024</li>
+    </ol>
+    <h2>Costos</h2>
+    <ul>
+      <li>Costo individual: 1.800.000 COP</li>
+      <li>Costo por pareja: 3.200.000 COP</li>
+    </ul>
+  </div>
+  <p hidden>{{ mensaje3 }}</p>
 </div>
+
 <div *ngIf="mostrar4">
-  <p>{{ mensaje4 }}</p>
+  <div class="divInformacion">
+    <h2>Descripción</h2>
+    <p class="dark">
+      Vive esta gran experencia de aventura a bordo de tu moto donde recorrerás
+      300km, desafiando 120km en ruta off road.
+    </p>
+    <h2>Recorrido</h2>
+    <p class="dark">
+      Saldremos desde la ciudad de Bogotá, cruzando el departamento del Huila
+      hasta llegar al desierto de la Tatacoa, pasando tu motocicleta en ferry
+      por el río Magdalena, disfruta de los paisajes que nos brinda este
+      maravilloso ecosistema que incluye rutas y puentes antiguos.
+    </p>
+    <h2>Qué Incluye</h2>
+    <ul>
+      <li>2 días, 1 noche de hospedaje con acomodación doble</li>
+      <li>Desayunos y almuerzos incluídos</li>
+      <li>Guías durante el recorrido</li>
+      <li>Seguro de viaje</li>
+      <li>Dirigido a motos de 250cc en adelante</li>
+    </ul>
+    <h2>Fechas Disponibles</h2>
+    <ol>
+      <li>7 al 8 de Septiembre 2024</li>
+      <li>26 al 27 de Octubre 2024</li>
+      <li>23 al 24 de Noviembre 2024</li>
+    </ol>
+    <h2>Costos</h2>
+    <ul>
+      <li>Costo individual: 700.000 COP</li>
+      <li>Costo por pareja: 1.200.000 COP</li>
+    </ul>
+  </div>
+  <p hidden>{{ mensaje4 }}</p>
 </div>
 
 <div></div>

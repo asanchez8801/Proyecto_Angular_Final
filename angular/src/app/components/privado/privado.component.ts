@@ -51,7 +51,7 @@ export class PrivadoComponent {
   mostrarOcultarInfo1() {
     if (this.mostrar) {
       this.mostrar = false;
-      this.mensaje_enlace = 'Mostrar';
+      this.mensaje_enlace = 'MÁS INFORMACIÓN';
     } else {
       this.mostrar = true;
       this.mensaje_enlace = 'Ocultar';
@@ -61,7 +61,7 @@ export class PrivadoComponent {
   mostrarOcultarInfo2() {
     if (this.mostrar2) {
       this.mostrar2 = false;
-      this.mensaje_enlace2 = 'Mostrar';
+      this.mensaje_enlace2 = 'MÁS INFORMACIÓN';
     } else {
       this.mostrar2 = true;
       this.mensaje_enlace2 = 'Ocultar';
@@ -71,7 +71,7 @@ export class PrivadoComponent {
   mostrarOcultarInfo3() {
     if (this.mostrar3) {
       this.mostrar3 = false;
-      this.mensaje_enlace3 = 'Mostrar';
+      this.mensaje_enlace3 = 'MÁS INFORMACIÓN';
     } else {
       this.mostrar3 = true;
       this.mensaje_enlace3 = 'Ocultar';
@@ -81,7 +81,7 @@ export class PrivadoComponent {
   mostrarOcultarInfo4() {
     if (this.mostrar4) {
       this.mostrar4 = false;
-      this.mensaje_enlace4 = 'Mostrar';
+      this.mensaje_enlace4 = 'MÁS INFORMACIÓN';
     } else {
       this.mostrar4 = true;
       this.mensaje_enlace4 = 'Ocultar';
