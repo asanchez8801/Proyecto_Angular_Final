@@ -34,18 +34,18 @@ export class PrivadoComponent {
 
   mostrar: Boolean = false;
   mensaje: String = 'Estas leyendo todo!!!';
-  mensaje_enlace: String = 'Mostrar';
+  mensaje_enlace: String = 'MÁS INFORMACIÓN';
 
   mostrar2: Boolean = false;
-  mensaje_enlace2: String = 'Mostrar';
+  mensaje_enlace2: String = 'MÁS INFORMACIÓN';
   mensaje2: String = 'Estas leyendo todo 222!!!';
 
   mostrar3: Boolean = false;
-  mensaje_enlace3: String = 'Mostrar';
+  mensaje_enlace3: String = 'MÁS INFORMACIÓN';
   mensaje3: String = 'Estas leyendo todo 333!!!';
 
   mostrar4: Boolean = false;
-  mensaje_enlace4: String = 'Mostrar';
+  mensaje_enlace4: String = 'MÁS INFORMACIÓN';
   mensaje4: String = 'Estas leyendo todo 444!!!';
 
   mostrarOcultarInfo1() {

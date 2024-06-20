@@ -1,12 +1,17 @@
 <p>Hola, {{ nombre }}</p>
 <div class="banner">
   <div class="card" style="width: 18rem">
-    <img src="..." class="card-img-top" alt="..." />
+    <img
+      src="../../../assets/privado_img/guajira.jpg"
+      class="card-img-top"
+      alt="guajira"
+    />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Tour Guajira</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Partimos desde Bogotá, hasta el punto más al norte de Colombia, contando
+        con guías locales, camionetas de apoyo para disfrutar de la alta
+        Guajira.
       </p>
     </div>
     <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo1()">
@@ -16,12 +21,17 @@
 
   <!--Informacion 2-->
   <div class="card" style="width: 18rem">
-    <img src="..." class="card-img-top" alt="..." />
+    <img
+      src="../../../assets/privado_img/nevados.jpg"
+      class="card-img-top"
+      alt="nevados"
+    />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Tour Nevados</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Disfruta de nosotros con este emocionante viaje, partiremos desde Bogotá
+        hasta Murillo-Tolima, divisaremos el hermoso Nevado del Ruiz y disfrutar
+        de sus termales.
       </p>
     </div>
     <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo2()">
@@ -31,12 +41,17 @@
 
   <!--Informacion 3-->
   <div class="card" style="width: 18rem">
-    <img src="..." class="card-img-top" alt="..." />
+    <img
+      src="../../../assets/privado_img/putumayo.jpeg"
+      class="card-img-top"
+      alt="putumayo"
+    />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Tour Putumayo</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Podrás explorar las maravillas naturales del Putumayo, visitaremos la
+        cascada del fin del mundo, el cañon del Mandiyaco y el centro de
+        estudios Amazónicos.
       </p>
     </div>
     <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo3()">
@@ -46,12 +61,17 @@
 
   <!--Informacion 4-->
   <div class="card" style="width: 18rem">
-    <img src="..." class="card-img-top" alt="..." />
+    <img
+      src="../../../assets/privado_img/tatcoa.jpg"
+      class="card-img-top"
+      alt="tatacoa"
+    />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Tour Desierto</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Origén de salida en Bogotá, hasta el desierto de la tatacoa en el Huila.
+        Cruzaremos por una ruta alternativa para disfrutar de 35km de offroad
+        con bastante adrenalina.
       </p>
     </div>
     <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo4()">
@@ -59,13 +79,81 @@
     </button>
   </div>
 </div>
-
 <div *ngIf="mostrar">
-  <h1>Costos</h1>
-  <p>{{ mensaje }}</p>
+  <div class="divInformacion">
+    <h2>Descripción</h2>
+    <p class="dark">
+      Este tour esta dirigido para riders que cuenten con motocicleta de 650cc
+      en adelante debido a la distancia del recorrido (1218km aprox.) durante el
+      recorrido en la alta Guajira contamos con guías locales y vehículos de
+      apoyo para evitar contratiempos que se puedan presentar por la dificultad
+      del terreno.
+    </p>
+    <h2>Recorrido</h2>
+    <p class="dark">
+      Saldremos desde la ciudad de Bogotá, por la via ruta del sol hacía el
+      cesar, en nuestra ruta cruzaremos por Mompox, Cabo de la Vela, Punta
+      Gallinas, Mayapo y Riohacha.
+    </p>
+    <h2>Qué Incluye</h2>
+    <ul>
+      <li>8 días, 7 noches de hospedaje en acomodación doble</li>
+      <li>Desayunos y almuerzos incluídos</li>
+      <li>Guías durante el recorrido</li>
+      <li>Vehículos de apoyo en caso de emergencia con paramédicos</li>
+      <li>Seguro de viaje</li>
+      <li>Dirigido a motos de 650cc en adelante</li>
+    </ul>
+    <h2>Fechas Disponibles</h2>
+    <ol>
+      <li>16 al 23 de Agosto 2024</li>
+      <li>11 al 18 de Octubre 2024</li>
+      <li>6 al 13 de Diciembre 2024</li>
+    </ol>
+    <h2>Costos</h2>
+    <ul>
+      <li>Costo individual: 3.500.000 COP</li>
+      <li>Costo por pareja: 6.500.000 COP</li>
+    </ul>
+  </div>
+  <p hidden>{{ mensaje }}</p>
 </div>
 <div *ngIf="mostrar2">
-  <p>{{ mensaje2 }}</p>
+  <div class="divInformacion">
+    <h2>Descripción</h2>
+    <p class="dark">
+      Tour dirigido para riders con motocicleta de 250cc en adelante. En este
+      tour tendremos la oportunidad de contar con ruta Off Road 30% y On Road
+      70% con un nivel de exigencia básico.
+    </p>
+    <h2>Recorrido</h2>
+    <p class="dark">
+      Saldremos desde la ciudad de Bogotá, hasta Murillo en el departamento del
+      Tolima, podremos visitar el imponente Nevado del Ruiz hasta llegar a
+      nuestro destino en Manizalez - Caldas.
+    </p>
+    <h2>Qué Incluye</h2>
+    <ul>
+      <li>2 días, 1 noche de hospedaje en finca ecoturística</li>
+      <li>Desayunos y almuerzos incluídos</li>
+      <li>Guías durante el recorrido</li>
+      <li>Noche de termales en Murillo - Tolima</li>
+      <li>Seguro de viaje</li>
+      <li>Dirigido a motos de 250cc en adelante</li>
+    </ul>
+    <h2>Fechas Disponibles</h2>
+    <ol>
+      <li>27 al 28 de Julio 2024</li>
+      <li>21 al 22 de Septiembre 2024</li>
+      <li>23 al 24 de Noviembre 2024</li>
+    </ol>
+    <h2>Costos</h2>
+    <ul>
+      <li>Costo individual: 800.000 COP</li>
+      <li>Costo por pareja: 1.400.000 COP</li>
+    </ul>
+  </div>
+  <p hidden>{{ mensaje2 }}</p>
 </div>
 
 <div *ngIf="mostrar3">
