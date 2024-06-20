@@ -40,7 +40,7 @@ img {
 }
 
 .carousel {
-  width: 30%;
+  width: 40%;
 }
 
 .texto_productos {
@@ -97,17 +97,24 @@ img {
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 1024px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   .cajasDerecha {
     flex-direction: column;
-    align-items: center;
     border-radius: 12px;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .cajasIzquierda {
     flex-direction: column;
-    align-items: center;
     border-radius: 12px;
+    width: 100%;
+    margin: 0;
+  }
+
+  h3 {
+    text-align: center;
+    text-decoration: underline;
   }
 
   .button {
@@ -122,12 +129,40 @@ img {
   }
 
   img {
-    display: flex;
-    justify-content: center;
-    object-fit: fill;
-    width: 220px;
+    width: 290px;
     height: 160px;
     border-radius: 10px;
     margin: 6% 0% 3% 0%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cajasDerecha {
+    border-radius: 12px;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .cajasIzquierda {
+    border-radius: 12px;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .container {
+    margin-left: 150px;
+  }
+
+  img {
+    margin-top: 30px;
+    border-radius: 10px;
   }
 }

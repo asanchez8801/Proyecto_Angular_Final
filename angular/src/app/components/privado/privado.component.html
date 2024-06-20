@@ -1,56 +1,78 @@
-@if (nombre != "") {
 <p>Hola, {{ nombre }}</p>
-}
-<hr />
-<div id="carouselExample" class="carousel slide caja">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          aspernatur fugiat delectus, reiciendis adipisci id error sapiente enim
-          veritatis laboriosam harum deserunt ut similique distinctio a maiores
-          dicta deleniti totam?
-        </p>
-      </div>
+<div class="banner">
+  <div class="card" style="width: 18rem">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
     </div>
-    <div class="carousel-item">
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          aspernatur fugiat delectus, reiciendis adipisci id error sapiente enim
-          veritatis laboriosam harum deserunt ut similique distinctio a maiores
-          dicta deleniti totam?
-        </p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          aspernatur fugiat delectus, reiciendis adipisci id error sapiente enim
-          veritatis laboriosam harum deserunt ut similique distinctio a maiores
-          dicta deleniti totam?
-        </p>
-      </div>
-    </div>
+    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo1()">
+      {{ mensaje_enlace }}
+    </button>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
+  <!--Informacion 2-->
+  <div class="card" style="width: 18rem">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo2()">
+      {{ mensaje_enlace2 }}
+    </button>
+  </div>
+
+  <!--Informacion 3-->
+  <div class="card" style="width: 18rem">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo3()">
+      {{ mensaje_enlace3 }}
+    </button>
+  </div>
+
+  <!--Informacion 4-->
+  <div class="card" style="width: 18rem">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+    <button href="#" class="btn btn-primary" (click)="mostrarOcultarInfo4()">
+      {{ mensaje_enlace4 }}
+    </button>
+  </div>
 </div>
+
+<div *ngIf="mostrar">
+  <h1>Costos</h1>
+  <p>{{ mensaje }}</p>
+</div>
+<div *ngIf="mostrar2">
+  <p>{{ mensaje2 }}</p>
+</div>
+
+<div *ngIf="mostrar3">
+  <p>{{ mensaje3 }}</p>
+</div>
+<div *ngIf="mostrar4">
+  <p>{{ mensaje4 }}</p>
+</div>
+
+<div></div>

@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
-  background-image: url(./assets/bf_Colombia.jpg);
+  background-image: url(./assets/bg-fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
-.icon {
-  width: 10px;
-  height: 10px;
+p {
+  color: white;
 }
